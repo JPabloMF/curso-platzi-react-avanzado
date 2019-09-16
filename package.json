@@ -4,6 +4,7 @@
     "description": "Repositorio con el código del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)",
     "main": "index.js",
     "scripts": {
+        "now-build": "npm run build",
         "build": "webpack",
         "lint": "standard --fix",
         "dev": "webpack-dev-server",
@@ -24,6 +25,7 @@
         "@babel/core": "^7.6.0",
         "@babel/preset-env": "^7.6.0",
         "@babel/preset-react": "^7.0.0",
+        "babel-eslint": "^10.0.3",
         "babel-loader": "^8.0.6",
         "html-webpack-plugin": "^3.2.0",
         "standard": "^14.2.0",
@@ -33,12 +35,14 @@
     },
     "dependencies": {
         "react": "^16.9.0",
-        "react-dom": "^16.9.0"
+        "react-dom": "^16.9.0",
+        "styled-components": "^4.3.2"
     },
     "standard": {
         "ignore": [
             "/api/**"
-        ]
+        ],
+        "parser": "babel-eslint"
     },
     "eslintConfig": {
         "extends": [
